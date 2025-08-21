@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
 
 :root{
-
     --branco: white;
     --cor-de-fundo: #00162e;
     --fundo-senha: #00244d;
@@ -11,7 +10,7 @@
     --roboto-mono: 'Roboto Mono', monospace;
 }
 
-*{
+* {
     font-weight: 400;
 }
 
@@ -33,7 +32,6 @@ body{
 .conteudo-titulo{
     text-align: center;
     margin-top: 80px;
-
 }
 
 .conteudo-senha{
@@ -49,7 +47,7 @@ body{
     color: var(--branco);
     font-family: var(--roboto-mono);
     font-size: 40px;
-    width:70%;
+    width: 70%;
 }
 
 #campo-senha:focus{
@@ -59,7 +57,6 @@ body{
 .conteudo{
     max-width: 1200px;
     margin: 0 auto;
-
 }
 
 .parametro{
@@ -74,21 +71,19 @@ body{
     font-size: 28px;
 }
 
-.parametro-senha_titulo{
+.paramentro-senha__titulo{
     font-size: 24px;
 }
 
-.parametro-coluna_senha{
+.parametro-coluna__senha{
     display: flex;
     flex-direction: column;
     justify-content: center;
-
 }
 
 .parametro-senha{
     width: 50%;
     margin: 0 auto;
-
 }
 
 .parametro-senha-botoes{
@@ -96,7 +91,7 @@ body{
     justify-content: center;
 }
 
-.parametro-senha_botao{
+.parametro-senha__botao{
     background-color: var(--fundo-texto);
     color: var(--branco);
     border: 2px solid var(--borda);
@@ -105,13 +100,12 @@ body{
     cursor: pointer;
 }
 
-.parametro-senha_texto{
+.parametro-senha__texto{
     padding: 24px;
     border-top: 2px solid var(--borda);
     border-bottom: 2px solid var(--borda);
     margin: 0 auto;
     font-size: 24px;
-
 }
 
 label{
@@ -125,7 +119,7 @@ label{
 }
 
 .barra{
-    background-color: var(--fundo-sena);
+    background-color: var(--fundo-senha);
     height: 30px;
     width: 100%;
 }
@@ -138,7 +132,7 @@ label{
 
 .fraca{
     width: 25%;
-    background-color: #e71b32;
+    background-color: #E71B32;
 }
 
 .media{
@@ -157,7 +151,7 @@ label{
 }
 
 @media screen and(min-width: 768px){
-    .parametro-culuna_senha{
+    .parametro-coluna__senha {
         flex-direction: row;
     }
 }

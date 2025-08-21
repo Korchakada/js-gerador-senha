@@ -24,11 +24,29 @@ function aumentaTamanho(){
 }
 
 const campoSenha = document.querySelector('#campo-senha');
+const checkbox = document.querySelectorAll('.checkbox');
 
 const letrasMaiuscula = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+const letrasMinusculas = 'abcdefghijklmnopqrstuvwxyz';
+const numeros = '0123456789';
+const simbolos = '!@%*?';
+
 geraSenha();
 
 function geraSenha(){
+    let alfabeto = '';
+    if (checkbox[0].checked){
+        alfabeto = alfabeto + letrasMaisculas;
+    }
+        if (checkbox[1].checked){
+        alfabeto = alfabeto + letrasMinusculas;
+    }
+        if (checkbox[2].checked){
+        alfabeto = alfabeto + numeros;
+    }
+        if (checkbox[3].checked){
+        alfabeto = alfabeto + simbolos;
+    }
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i++){
         let numeroAleatorio = Math.random() * letrasMaiuscula.length;
